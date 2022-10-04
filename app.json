@@ -1,0 +1,57 @@
+{
+    "name": "Link-Bypasser-Bot",
+    "description": "Telegram Bot that bypasses Ad-Links.",
+    "logo": "",
+    "keywords": [
+      "bot",
+      "telegram",
+      "python"
+    ],
+    "repository": "https://github.com/VinzGh1/Link-Bypasser-Bot",
+    "website": "https://github.com/VinzGh1/Link-Bypasser-Bot",
+    "success_url": "https://github.com/VinzGh1/Link-Bypasser-Bot",
+    "env": {
+      
+      "TOKEN": {
+        "description": "The telegram bot token that you get from @BotFather.",
+        "required": true
+      },
+      "GDTot_Crypt": {
+        "description": "GDtot Cookie",
+        "required": false
+      },
+      "Laravel_Session": {
+        "required": false
+      },
+      "XSRF_TOKEN": {
+        "required": false
+      },
+      "KOLOP_CRYPT": {
+        "required": false
+      },
+      "DRIVEFIRE_CRYPT": {
+        "required": false
+      },
+      "HUBDRIVE_CRYPT": {
+        "required": false
+      },
+      "KATDRIVE_CRYPT": {
+        "required": false
+      },
+      "UPTOBOX_TOKEN": {
+        "required": false
+      },
+      "AD_EMAIL": {
+        "required": false
+      },
+      "AD_PASS": {
+        "required": false
+      }
+    },
+    "formation": {
+            "worker": {
+                "quantity": 1,
+                "size": "free"
+            }
+      }
+}
