@@ -41,11 +41,16 @@ APIs = [
     "https://api.gofile.io"
 ]
 
-import os
+import os, sys
 import logging as log
 
 # Setup Logger
-log.basicConfig(level=log.INFO, filename='runtime-log.txt',format='%(asctime)s:%(levelname)s:%(message)s', encoding='utf-8')
+log.basicConfig(
+    level=log.INFO,
+    datefmt="%d/%m/%Y %H:%M:%S",
+    format="[%(asctime)s][%(levelname)s] => %(message)s",
+    handlers=[log.StreamHandler(stream=sys.stdout),
+              log.FileHandler("runtime-log.txt", mode="a", encoding="utf-8")],)
 
 def check():
     if not Vars[0]:
